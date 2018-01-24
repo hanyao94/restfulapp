@@ -1,0 +1,49 @@
+## .gitignore for intellij
+
+*.iml
+*.ipr
+.idea/
+
+# .gitignore for maven
+target/
+*.releaseBackup
+
+# web application files
+#/web-app/WEB-INF
+
+# IDE support files
+/.classpath
+/.launch
+/.project
+/.settings
+/*.launch
+/*.tmproj
+/ivy*
+/eclipse
+
+# logs
+/stacktrace.log
+/test/reports
+/logs
+*.log
+*.log.*
+
+# older plugin install locations
+/plugins
+/web-app/plugins
+/web-app/WEB-INF/classes
+
+# "temporary" build files
+out/
+build/
+
+# other
+*.iws
+
+#.gitignore for java
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
