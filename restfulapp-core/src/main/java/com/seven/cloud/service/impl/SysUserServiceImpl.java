@@ -12,8 +12,9 @@ package com.seven.cloud.service.impl;
 import com.seven.cloud.mapper.SysUserMapper;
 import com.seven.cloud.pojo.SysUser;
 import com.seven.cloud.service.SysUserService;
-import org.springframework.stereotype.Component;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Service;
+import rs.RSRoles;
 
 import javax.annotation.Resource;
 
@@ -21,6 +22,7 @@ import javax.annotation.Resource;
  * @author seven
  */
 @Service
+@Secured({RSRoles.ROLE_USER})
 public class SysUserServiceImpl implements SysUserService {
 
   @Resource
